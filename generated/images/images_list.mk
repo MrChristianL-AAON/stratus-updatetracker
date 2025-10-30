@@ -1,0 +1,1 @@
+GEN_CSRCS += _Stratus_RGB565A8_891x120.c
