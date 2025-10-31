@@ -9,7 +9,7 @@
 
 #include "lvgl.h"
 #include <stdio.h>
-#include "update-tracker.h"
+#include "update_tracker.h"
 #include "widgets_init.h"
 
 void ui_init_style(lv_style_t * style)

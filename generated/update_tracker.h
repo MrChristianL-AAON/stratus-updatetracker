@@ -7,8 +7,8 @@
 * terms, then you may not retain, install, activate or otherwise use the software.
 */
 
-#ifndef update-tracker_H
-#define update-tracker_H
+#ifndef update_tracker_H
+#define update_tracker_H
 #ifdef __cplusplus
 extern "C" {
 #endif
