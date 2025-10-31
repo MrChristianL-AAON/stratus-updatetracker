@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "lvgl.h"
-#include "update_tracker.h"
+#include "update-tracker.h"
 #include "events_init.h"
 #include "custom.h"
 

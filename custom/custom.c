@@ -16,7 +16,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "lvgl.h"
-#include "../generated/update_tracker.h"
+#include "../generated/update-tracker.h"
 #include "custom.h"
 
 /* Check if we're compiling for simulator mode */
@@ -342,7 +342,7 @@ static void check_update_status(lv_ui *ui)
  * Poll for updates from the JSON file at a regular interval
  * Only reads and processes the JSON if the file has changed
  */
-void update_tracker_task(lv_timer_t *timer)
+void update-tracker_task(lv_timer_t *timer)
 {
     lv_ui *ui = (lv_ui *)timer->user_data;
     check_update_status(ui);
@@ -439,7 +439,7 @@ static void simulate_update_cycle(lv_timer_t *timer)
 void custom_init(lv_ui *ui)
 {
     /* Initialize update tracking */
-    update_timer = lv_timer_create(update_tracker_task, DEFAULT_UPDATE_INTERVAL, ui);
+    update_timer = lv_timer_create(update-tracker_task, DEFAULT_UPDATE_INTERVAL, ui);
     
     /* Log the path where we're looking for the JSON file */
     printf("Update tracker: Monitoring %s for update status changes\n", UPDATE_JSON_PATH);

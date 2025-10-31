@@ -29,8 +29,8 @@ mkdir $BUILDDIR
 cd $BUILDDIR
 cmake -G 'Ninja' .. -DCMAKE_TOOLCHAIN_FILE=$toolchain -Wno-dev -DLV_CONF_BUILD_DISABLE_EXAMPLES=1 -DLV_CONF_BUILD_DISABLE_DEMOS=1 -DLV_CONF_BUILD_DISABLE_THORVG_INTERNAL=1
 ninja
-if [ -e update_tracker ];then
-    echo "Binary locates at $(readlink -f update_tracker)"
-    ls -lh update_tracker
+if [ -e update-tracker ];then
+    echo "Binary locates at $(readlink -f update-tracker)"
+    ls -lh update-tracker
 fi
 

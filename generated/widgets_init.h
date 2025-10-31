@@ -14,7 +14,7 @@ extern "C" {
 #endif
 
 #include "lvgl.h"
-#include "update_tracker.h"
+#include "update-tracker.h"
 
 __attribute__((unused)) void kb_event_cb(lv_event_t *e);
 __attribute__((unused)) void ta_event_cb(lv_event_t *e);
